@@ -3,9 +3,10 @@
 
 main :: IO()
 main = do
-    print (validate 4012888888881881)
-    print (validate 4012888888881882)
-     
+    print (validate 4012888888881881)  --true
+    print (validate 4012888888881882)  --false
+    print (validate (-4012888888881881))  --false
+ 
 
 -- Checks if the credit is valid.
 validate :: Integer -> Bool
