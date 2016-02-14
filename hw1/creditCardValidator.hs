@@ -10,9 +10,7 @@ main = do
 -- Checks if the credit is valid.
 validate :: Integer -> Bool
 validate n = (checkSum n) `mod` 10 == 0
-
-checkSum :: Integer -> Integer
-checkSum = sumListDigits . doubleEveryOther . intToList  -- (.) makes composition functions
+             where checkSum = sumListDigits . doubleEveryOther . intToList  -- (.) makes composition functions
 
 
 -- Computes sum of all the digits in all their integers.
