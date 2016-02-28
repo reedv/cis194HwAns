@@ -42,6 +42,8 @@ data Tree a = Leaf
             | Node Integer (Tree a) a (Tree a)
   deriving (Show, Eq)
 
+-- TODO
+
 
 ---------- Ex 3: more folds
 -- foldr, applied to a binary operator, a starting value
